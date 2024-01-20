@@ -1,11 +1,12 @@
-<main>
-  <a [routerLink]="['/']">
-    <header class="brand-name">
-      <img class="brand-logo" src="/assets/house.svg" alt="logo" aria-hidden="true">
-      <strong>Homes</strong>
-    </header>
+<header>
+  <a routerLink="/">
+    <h1>Local Storage Contact List</h1>
   </a>
-  <section class="content">
-    <router-outlet></router-outlet>
-  </section>
-</main>
+  <a routerLink="/add">Add Person &raquo;</a>
+</header>
+
+<div class="router-outlet">
+  <router-outlet></router-outlet>
+</div>
+
+<footer>Mateusz Kolosz</footer>
